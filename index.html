@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+content="width=device-width, initial-scale=1.0">
+    <title>HBD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body style="background-image: url(https://images.unsplash.com/photo-1614850523011-8f49ffc73908?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470);"class="flex justify-center h-screen items-center"
+>
+<div class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-blue-300 rounded-xl text-center animate__animated animate__backInDown m-8 w-80"
+id="kartu" id="saja"
+>
+    <h1 class="text-3xl">Happy Birthday</h1>
+    <h2 class="text-4xl text-blue-500 font-bold animate__animated animate__headShake animate__infinite">Noviana</h2>
+    <button class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="ubahkartu()">Klik Disini!!
+    </button>
+<div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+    });
+    let kartu = document.getElementById("kartu");
+    function ubahkartu() {
+        kartu.innerHTML = ` <h1 class="font-semiBold text-wrap animate__animated animate__zoomIn"> 🎉 Selamat Ulang Tahun! 🎉
+        Semoga di hari istimewa ini kamu diberi umur panjang, kesehatan, dan kebahagiaan yang tidak pernah habis.
+Semoga setiap langkahmu dipenuhi keberkahan dan semua impianmu satu per satu menjadi nyata. 🌸✨ Aminn... </h1>
+     <h2 class="mt-3 animate__animated animate__fadeIn">
+        - Dari : A Zaky M -
+    </h2>
+    <button class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="refresh()">Kembali
+    </button>
+     `;
+    }
+    function refresh() {
+        location.reload();
+    }
+</script>
+</body>
+</html>
