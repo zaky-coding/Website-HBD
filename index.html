@@ -21,7 +21,12 @@ id="kartu" id="saja"
     <button class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="ubahkartu()">Klik Disini!!
     </button>
 <div>
-
+<audio id="lagu" src="lagu.mp3"></audio>
+<script>
+    document.body.addEventListener('click', function() {
+    document.getElementById('lagu').play();
+    }, { one: true });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
     <script>confetti({
         particleCount: 100,
@@ -45,4 +50,5 @@ Semoga setiap langkahmu dipenuhi keberkahan dan semua impianmu satu per satu men
     }
 </script>
 </body>
+
 </html>
